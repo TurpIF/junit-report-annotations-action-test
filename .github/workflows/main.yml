@@ -20,7 +20,7 @@ jobs:
     - name: Build
       run: ./gradlew build
 
-    - uses: ashley-taylor/junit-report-annotations-action@1.2
+    - uses: turpif/junit-report-annotations-action@gradle
       if: always()
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
