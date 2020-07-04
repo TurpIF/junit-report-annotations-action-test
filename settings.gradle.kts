@@ -1,0 +1,1 @@
+rootProject.name = "junit-report-annotations-action"
