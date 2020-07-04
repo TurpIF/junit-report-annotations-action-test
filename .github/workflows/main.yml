@@ -17,8 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    # --continue is used to get all JUnit reports despite failures
     - name: Build
-      run: ./gradlew build
+      run: ./gradlew build --continue
 
     - uses: ashley-taylor/junit-report-annotations-action@1.2
       if: always()
