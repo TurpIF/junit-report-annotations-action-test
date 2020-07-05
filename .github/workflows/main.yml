@@ -17,7 +17,7 @@ jobs:
     - name: Build
       run: ./gradlew build
 
-    - uses: ashley-taylor/junit-report-annotations-action@1.2
+    - uses: turpif/junit-report-annotations-action@macos
       if: always()
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
@@ -32,7 +32,7 @@ jobs:
       - name: Build
         run: ./gradlew build
 
-      - uses: ashley-taylor/junit-report-annotations-action@1.2
+      - uses: turpif/junit-report-annotations-action@macos
         if: always()
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
